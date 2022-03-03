@@ -27,6 +27,36 @@ html{
     margin: 2em auto;
 }
 
+/* tag sconto e sostenibilità */
+.tag-dsout-sost{
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    top: 80%;
+}
+
+.sost-config{
+    color: #ffffff;
+    position: absolute;
+    display: inline-block;
+    background-color: #00875a;
+    padding: .3em .3em;
+
+}
+
+.discount{
+    position: absolute;
+    display: inline-block;
+    background-color: #eb0037;
+    left: 0;
+    padding: .3em .3em;
+}
+
+.sost-with-dsout{
+    left: 3.2em;
+}
+
+
 /* BODY */
 
 body{
@@ -40,6 +70,7 @@ body{
 
 /* PRODOTTO */
 .product{
+    vertical-align: top;
     position: relative;
     display: inline-block;
     width: calc((100%/3) - 11px);
@@ -50,7 +81,7 @@ body{
     width: 100%;
 }
 
-.heart{
+.product .heart{
     font-size: 1.3em;
     position: absolute;
     display: inline-block;
@@ -60,32 +91,6 @@ body{
     padding: .2em .5em;
 }
 
-/* tag sconto e sostenibilità */
-.tag-dsout-sost{
-    font-size: 12px;
-    font-weight: bold;
-    color: #ffffff;
-    bottom: 5.5em;
-
-
-}
-
-.discount{
-    position: absolute;
-    display: inline-block;
-    background-color: #eb0037;
-    left: 0;
-    padding: .3em .3em;
-}
-
-.sostenibilità{
-    color: #ffffff;
-    position: absolute;
-    display: inline-block;
-    background-color: #00875a;
-    left: 3.2em;
-    padding: .3em .3em;
-}
 
 /* descrizione prodotto */
 .product-title{
@@ -103,5 +108,25 @@ body{
     font-style: oblique;
     text-decoration: line-through;
 }
+
+/* HOVER */
+/* image change  */
+.product:hover .product-img1{
+    display: none;
+}
+
+.product:hover .product-img1b{
+    cursor: pointer;
+    display: inline-block;
+}
+
+.product:hover .heart{
+    color: red;
+}
+
+.product-img1b{
+    display: none;
+}
+
 
 

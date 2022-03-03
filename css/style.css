@@ -5,19 +5,26 @@
     box-sizing: border-box;
 }
 
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /* COMMON */
+
+.font-size-8em{
+    font-size: .8em;
+}
 
 .container{
     width: 80%;
     margin: 0 auto;
     background-color: #ffffff;
-    border: 2px solid rgb(255, 0, 0);
+    padding: 2em 0;
 }
 
 .container-2{
     width: 80%;
     margin: 2em auto;
-    border: 2px solid rgb(25, 0, 255);
 }
 
 /* BODY */
@@ -27,16 +34,15 @@ body{
 }
 
 .product-row{
-    margin: 0 auto;
+    margin: 2em auto;
     width: 96%;
-    border: 2px solid rgb(0, 255, 64);
 }
 
+/* PRODOTTO */
 .product{
     position: relative;
     display: inline-block;
     width: calc((100%/3) - 11px);
-    border: 2px solid yellow;
     margin: 0 4px;
 }
 
@@ -45,11 +51,57 @@ body{
 }
 
 .heart{
+    font-size: 1.3em;
     position: absolute;
     display: inline-block;
     background-color: #ffffff;
     top: 10px;
     right: 0;
     padding: .2em .5em;
+}
+
+/* tag sconto e sostenibilità */
+.tag-dsout-sost{
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    bottom: 5.5em;
+
 
 }
+
+.discount{
+    position: absolute;
+    display: inline-block;
+    background-color: #eb0037;
+    left: 0;
+    padding: .3em .3em;
+}
+
+.sostenibilità{
+    color: #ffffff;
+    position: absolute;
+    display: inline-block;
+    background-color: #00875a;
+    left: 3.2em;
+    padding: .3em .3em;
+}
+
+/* descrizione prodotto */
+.product-title{
+    font-weight: bold;
+    font-size: .9em;
+}
+
+/* prezzo */
+.new-price{
+    color: red;
+    font-weight: bold;
+}
+
+.old-price{
+    font-style: oblique;
+    text-decoration: line-through;
+}
+
+
